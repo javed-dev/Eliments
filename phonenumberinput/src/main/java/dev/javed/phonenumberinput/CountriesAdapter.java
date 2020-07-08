@@ -27,6 +27,7 @@ import androidx.annotation.NonNull;
 
 import java.util.List;
 
+
 public class CountriesAdapter extends ArrayAdapter<Country> implements SpinnerAdapter {
     LayoutInflater layoutInflater;
 
@@ -35,6 +36,7 @@ public class CountriesAdapter extends ArrayAdapter<Country> implements SpinnerAd
         layoutInflater = LayoutInflater.from(getContext());
     }
 
+    @NonNull
     @Override
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
         Country country = getItem(position);
@@ -50,7 +52,7 @@ public class CountriesAdapter extends ArrayAdapter<Country> implements SpinnerAd
     }
 
     @Override
-    public View getDropDownView(int position, View convertView, ViewGroup parent) {
+    public View getDropDownView(int position, View convertView, @NonNull ViewGroup parent) {
         return getCustomView(position, convertView, parent);
     }
 
@@ -67,6 +69,7 @@ public class CountriesAdapter extends ArrayAdapter<Country> implements SpinnerAd
             viewHolder = (ViewHolder) convertView.getTag();
         }
         Country country = getItem(position);
+        assert country != null;
         viewHolder.mFlag.setImageResource(country.getResId(getContext()));
         viewHolder.mName.setText(country.getCountryName());
         viewHolder.mDialCode.setText(String.format("+%s", country.getPhoneCode()));
