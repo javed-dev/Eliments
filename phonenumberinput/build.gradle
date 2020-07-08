@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'phonenumberinput'
+
+    publishedGroupId = 'dev.javed.eliments'
+    libraryName = 'PhoneNumberInput'
+    artifact = 'phonenumberinput'
+
+    libraryDescription = 'A lightweight android phone number input library.'
+
+    siteUrl = 'https://github.com/javed-hussain/Eliments'
+    gitUrl = 'https://github.com/javed-hussain/Eliments.git'
+
+    libraryVersion = '0.0.1-alpha02'
+
+    developerId = 'javed-dev'
+    developerName = 'Javed Hussain'
+    developerEmail = 'javed15895@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.0"
@@ -9,7 +33,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        generatedDensities = []
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -31,3 +55,6 @@ dependencies {
     implementation 'io.michaelrocks:libphonenumber-android:8.12.6'
 
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
