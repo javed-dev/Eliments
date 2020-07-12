@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/javed-hussain/Eliments'
     gitUrl = 'https://github.com/javed-hussain/Eliments.git'
 
-    libraryVersion = '0.0.1-alpha02'
+    libraryVersion = '0.0.1-alpha03'
 
     developerId = 'javed-dev'
     developerName = 'Javed Hussain'
@@ -57,4 +57,4 @@ dependencies {
 }
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+apply from: 'bintray.gradle'
