@@ -14,29 +14,30 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:padding="@dimen/padding_small"
-    >
+    tools:ignore="UseCompoundDrawables">
 
     <ImageView
         android:id="@+id/flag"
         android:layout_width="@dimen/flag_size"
         android:layout_height="@dimen/flag_size"
         android:src="@drawable/flag_in"
-        />
+        android:contentDescription="@string/flag" />
 
 
     <TextView
         android:id="@+id/dial_code"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_medium"
-        android:layout_marginStart="@dimen/margin_medium"
         android:textColor="@color/pf_grey_light"
-        android:text="+91"
-        android:textSize="18sp"/>
+        android:gravity="end"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textSize="18sp" />
 
 </LinearLayout>

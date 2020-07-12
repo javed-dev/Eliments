@@ -56,6 +56,7 @@ public class PhoneNumberInputText extends LinearLayout {
         phoneNumberUtil = PhoneNumberUtil.createInstance(context);
         inflate(getContext(), R.layout.phone_number_input, this);
         prepareView();
+//        getRootView().setBackgroundResource(R.drawable.border);
     }
 
     private void prepareView() {
@@ -71,7 +72,7 @@ public class PhoneNumberInputText extends LinearLayout {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 hideKeyboard();
-                return false;
+                return v.performClick();
             }
         });
 
