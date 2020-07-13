@@ -5,8 +5,7 @@ version = libraryVersion
 task androidJavadocs(type: Javadoc) {
     failOnError = false
     source = android.sourceSets.main.java.srcDirs
-    ext.androidJar = "${android.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar"
-    classpath += files(ext.androidJar)
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator)) + configurations.compile
 }
 
 task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {

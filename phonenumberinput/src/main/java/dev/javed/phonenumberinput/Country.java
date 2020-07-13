@@ -63,8 +63,14 @@ public class Country {
     }
 
     public int getResId(Context context) {
-        String name = String.format("flag_%s",countryCode.toLowerCase());
+        String name = String.format("flag_%s", countryCode.toLowerCase());
         final Resources resources = context.getResources();
         return resources.getIdentifier(name, "drawable", context.getPackageName());
+    }
+
+    public boolean is(String tag) {
+        return tag.equalsIgnoreCase(countryName)
+                || tag.equalsIgnoreCase(phoneCode)
+                || tag.equalsIgnoreCase(countryCode);
     }
 }

@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/javed-hussain/Eliments'
     gitUrl = 'https://github.com/javed-hussain/Eliments.git'
 
-    libraryVersion = '0.0.1-alpha04'
+    libraryVersion = '0.0.1-beta01'
 
     developerId = 'javed-dev'
     developerName = 'Javed Hussain'

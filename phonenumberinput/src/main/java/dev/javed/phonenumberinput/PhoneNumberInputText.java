@@ -56,13 +56,13 @@ public class PhoneNumberInputText extends LinearLayout {
         phoneNumberUtil = PhoneNumberUtil.createInstance(context);
         inflate(getContext(), R.layout.phone_number_input, this);
         prepareView();
+        countryCodeSpinner.setSelection(Countries.getCountryIndex("IN"), true);
 //        getRootView().setBackgroundResource(R.drawable.border);
     }
 
     private void prepareView() {
         countryCodeSpinner = findViewById(R.id.country_code_spinner);
         phoneNumberText = findViewById(R.id.phone_number_text);
-
         if (phoneNumberText == null || countryCodeSpinner == null) {
             throw new IllegalStateException("Please provide a valid xml layout");
         }
@@ -90,7 +90,7 @@ public class PhoneNumberInputText extends LinearLayout {
             public void afterTextChanged(Editable s) {
                 String rawNumber = s.toString();
                 if (rawNumber.isEmpty()) {
-                    countryCodeSpinner.setSelection(0);
+                    countryCodeSpinner.setSelection(Countries.getCountryIndex("IN"), true);
                 } else {
                     if (rawNumber.startsWith("00")) {
                         rawNumber = rawNumber.replaceFirst("00", "+");

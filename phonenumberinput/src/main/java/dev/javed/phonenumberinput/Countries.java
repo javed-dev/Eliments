@@ -129,29 +129,29 @@ public class Countries {
         COUNTRIES.add(new Country("Mali","ML","223","mali"));
         COUNTRIES.add(new Country("Malta","MT","356","malta"));
         COUNTRIES.add(new Country("Marshall Islands","MH","692","marshall-island"));
-        COUNTRIES.add(new Country("Mauritania","MR","222","mauritania"));
-        COUNTRIES.add(new Country("Mauritius","MU","230","mauritius"));
-        COUNTRIES.add(new Country("Mexico","MX","52","mexico"));
-        COUNTRIES.add(new Country("Micronesia","FM","691","micronesia"));
-        COUNTRIES.add(new Country("Moldova","MD","373","moldova"));
-        COUNTRIES.add(new Country("Monaco","MC","377","monaco"));
-        COUNTRIES.add(new Country("Mongolia","MN","976","mongolia"));
-        COUNTRIES.add(new Country("Montenegro","ME","382","montenegro"));
-        COUNTRIES.add(new Country("Morocco","MA","212","morocco"));
-        COUNTRIES.add(new Country("Mozambique","MZ","258","mozambique"));
-        COUNTRIES.add(new Country("Myanmar","MM","95","myanmar"));
-        COUNTRIES.add(new Country("Namibia","","264","namibia"));
-        COUNTRIES.add(new Country("Nauru","NR","674","nauru"));
-        COUNTRIES.add(new Country("Nepal","NP","977","nepal"));
-        COUNTRIES.add(new Country("Netherlands","NL","31","netherlands"));
-        COUNTRIES.add(new Country("New Zealand","NZ","64","new-zealand"));
-        COUNTRIES.add(new Country("Nicaragua","NI","505","nicaragua"));
-        COUNTRIES.add(new Country("Niger","NE","227","niger"));
-        COUNTRIES.add(new Country("Nigeria","NG","234","nigeria"));
-        COUNTRIES.add(new Country("North Korea","KP","850","north-korea"));
-        COUNTRIES.add(new Country("Norway","NO","47","norway"));
-        COUNTRIES.add(new Country("Oman","OM","968","oman"));
-        COUNTRIES.add(new Country("Pakistan","PK","92","pakistan"));
+        COUNTRIES.add(new Country("Mauritania", "MR", "222", "mauritania"));
+        COUNTRIES.add(new Country("Mauritius", "MU", "230", "mauritius"));
+        COUNTRIES.add(new Country("Mexico", "MX", "52", "mexico"));
+        COUNTRIES.add(new Country("Micronesia", "FM", "691", "micronesia"));
+        COUNTRIES.add(new Country("Moldova", "MD", "373", "moldova"));
+        COUNTRIES.add(new Country("Monaco", "MC", "377", "monaco"));
+        COUNTRIES.add(new Country("Mongolia", "MN", "976", "mongolia"));
+        COUNTRIES.add(new Country("Montenegro", "ME", "382", "montenegro"));
+        COUNTRIES.add(new Country("Morocco", "MA", "212", "morocco"));
+        COUNTRIES.add(new Country("Mozambique", "MZ", "258", "mozambique"));
+        COUNTRIES.add(new Country("Myanmar", "MM", "95", "myanmar"));
+        COUNTRIES.add(new Country("Namibia", "NA", "264", "namibia"));
+        COUNTRIES.add(new Country("Nauru", "NR", "674", "nauru"));
+        COUNTRIES.add(new Country("Nepal", "NP", "977", "nepal"));
+        COUNTRIES.add(new Country("Netherlands", "NL", "31", "netherlands"));
+        COUNTRIES.add(new Country("New Zealand", "NZ", "64", "new-zealand"));
+        COUNTRIES.add(new Country("Nicaragua", "NI", "505", "nicaragua"));
+        COUNTRIES.add(new Country("Niger", "NE", "227", "niger"));
+        COUNTRIES.add(new Country("Nigeria", "NG", "234", "nigeria"));
+        COUNTRIES.add(new Country("North Korea", "KP", "850", "north-korea"));
+        COUNTRIES.add(new Country("Norway", "NO", "47", "norway"));
+        COUNTRIES.add(new Country("Oman", "OM", "968", "oman"));
+        COUNTRIES.add(new Country("Pakistan", "PK", "92", "pakistan"));
         COUNTRIES.add(new Country("Palau","PW","680","palau"));
         COUNTRIES.add(new Country("Palestine","PS","970","palestine"));
         COUNTRIES.add(new Country("Panama","PA","507","panama"));
@@ -198,24 +198,33 @@ public class Countries {
         COUNTRIES.add(new Country("Thailand","TH","66","thailand"));
         COUNTRIES.add(new Country("Togo","TG","228","togo"));
         COUNTRIES.add(new Country("Tonga","TO","676","tonga"));
-        COUNTRIES.add(new Country("Trinidad and Tobago","TT","1868","trinidad-and-tobago"));
-        COUNTRIES.add(new Country("Tunisia","TN","216","tunisia"));
-        COUNTRIES.add(new Country("Turkey","TR","90","turkey"));
-        COUNTRIES.add(new Country("Turkmenistan","TM","993","turkmenistan"));
-        COUNTRIES.add(new Country("Tuvalu","TV","688","tuvalu"));
-        COUNTRIES.add(new Country("Uganda","UG","256","uganda"));
-        COUNTRIES.add(new Country("Ukraine","UA","380","ukraine"));
-        COUNTRIES.add(new Country("United Arab Emirates","AE","971","united-arab-emirates"));
-        COUNTRIES.add(new Country("United Kingdom","GB","44","united-kingdom"));
-        COUNTRIES.add(new Country("United States","US","1","united-states-of-america"));
-        COUNTRIES.add(new Country("Uruguay","UY","598","uruguay"));
-        COUNTRIES.add(new Country("Uzbekistan","UZ","998","uzbekistn"));
-        COUNTRIES.add(new Country("Vanuatu","VU","678","vanuatu"));
-        COUNTRIES.add(new Country("Vatican","VA","379","vatican-city"));
-        COUNTRIES.add(new Country("Venezuela","VE","58","venezuela"));
-        COUNTRIES.add(new Country("Vietnam","VN","84","vietnam"));
-        COUNTRIES.add(new Country("Yemen","YE","967","yemen"));
-        COUNTRIES.add(new Country("Zambia","ZM","260","zambia"));
-        COUNTRIES.add(new Country("Zimbabwe","ZW","263","zimbabwe"));
+        COUNTRIES.add(new Country("Trinidad and Tobago", "TT", "1868", "trinidad-and-tobago"));
+        COUNTRIES.add(new Country("Tunisia", "TN", "216", "tunisia"));
+        COUNTRIES.add(new Country("Turkey", "TR", "90", "turkey"));
+        COUNTRIES.add(new Country("Turkmenistan", "TM", "993", "turkmenistan"));
+        COUNTRIES.add(new Country("Tuvalu", "TV", "688", "tuvalu"));
+        COUNTRIES.add(new Country("Uganda", "UG", "256", "uganda"));
+        COUNTRIES.add(new Country("Ukraine", "UA", "380", "ukraine"));
+        COUNTRIES.add(new Country("United Arab Emirates", "AE", "971", "united-arab-emirates"));
+        COUNTRIES.add(new Country("United Kingdom", "GB", "44", "united-kingdom"));
+        COUNTRIES.add(new Country("United States", "US", "1", "united-states-of-america"));
+        COUNTRIES.add(new Country("Uruguay", "UY", "598", "uruguay"));
+        COUNTRIES.add(new Country("Uzbekistan", "UZ", "998", "uzbekistn"));
+        COUNTRIES.add(new Country("Vanuatu", "VU", "678", "vanuatu"));
+        COUNTRIES.add(new Country("Vatican", "VA", "379", "vatican-city"));
+        COUNTRIES.add(new Country("Venezuela", "VE", "58", "venezuela"));
+        COUNTRIES.add(new Country("Vietnam", "VN", "84", "vietnam"));
+        COUNTRIES.add(new Country("Yemen", "YE", "967", "yemen"));
+        COUNTRIES.add(new Country("Zambia", "ZM", "260", "zambia"));
+        COUNTRIES.add(new Country("Zimbabwe", "ZW", "263", "zimbabwe"));
+    }
+
+    public static int getCountryIndex(String searchTerm) {
+        for (int i = 0; i < COUNTRIES.size(); i++) {
+            if (COUNTRIES.get(i).is(searchTerm)) {
+                return i;
+            }
+        }
+        return 0;
     }
 }
